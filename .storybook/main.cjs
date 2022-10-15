@@ -14,8 +14,12 @@ module.exports = {
     "builder": "@storybook/builder-vite"
   },
   "features": {
-    "storyStoreV7": true
+    "storyStoreV7": true,
+    "interactionsDebugger": true
   },
+  "StaticDirs": [
+    "../public"
+  ],
   viteFinal: (config, {configType}) => {
     if (configType === 'PRODUCTION') {
       config.base = '/design-system-react/'
