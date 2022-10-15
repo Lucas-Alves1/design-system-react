@@ -14,10 +14,11 @@ export function SignIn() {
     async function handleSignIn(event: FormEvent) {
         event.preventDefault();
 
-        await axios.post('/sessios', {
-            email: 'lucas.lago.cont@gmail.com',
-            password: '12345'
-        })
+        // uncomment se for testar a req. no storybook
+        // await axios.post('/sessios', {
+        //     email: 'lucas.lago.cont@gmail.com',
+        //     password: '12345'
+        // })
 
         setUsuarioLogado(false)
     }
